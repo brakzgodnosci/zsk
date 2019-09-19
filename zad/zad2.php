@@ -33,5 +33,28 @@ echo $y,'<br>';//4
 $y = ++$x;
 echo $y,'<br>';//6
 echo ++$y,'<br><hr>';//7
+//
+//bool, int, float, string, array, object, unset
+$text = '42abc';
+$text1 = -1;
+$text2 = 20;
+
+
+$x = (int)$text;
+$x1 =(bool)$text1;
+$x2 =(unset)$text2;
+
+
+echo $x,'<br>';
+echo $x1,'<br>'; //jak wartosć jest 0 nic nie wyświetla
+echo 'unset:',$x2,'<br>';
+echo 'unset:',gettype($x2),'<br><hr>';
+
+// rozmiar typu
+echo PHP_INT_SIZE,'<br><hr>';
+//
+$w;
+echo @gettype($w);
+
 
  ?>
